@@ -144,7 +144,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-4 wow fadeInUp animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
                     <div class="services-three__single">
                         <div class="">
-                            <a href="http://tamaratrading.epizy.com/" target="_blank">
+                            <a href="https://tamaratradings.com/" target="_blank">
                                 <div class="services-three__img">
                                     <img class="img-fluid" src="{{ asset('assets/frontend/images/division/tamaratrading1.png') }}" alt="">
                                 </div>

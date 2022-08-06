@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Roofsie HTML 5 Template " />
+    <meta name="description" content="We are a network of knowledgeable and highly experienced professionals familiar with the local Saudi industries, governing laws , regulations, and contracting and procurement practices" />
+    <meta name="google-site-verification" content="lBxuUbEs3hduaquHWtStzaqTOXwT6TbV1MWrFggU9UU" />
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
