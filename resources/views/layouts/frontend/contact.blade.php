@@ -38,24 +38,48 @@
             </div>
             <div class="row">
                 <div class="col-xl-12">
+                    @if ($message = Session::get('success'))
+                        <div class="alert alert-success alert-block">
+                            <button type="button" class="close" data-dismiss="alert">×</button>
+                            <strong>{{ $message }}</strong>
+                        </div>
+                    @endif
                     <div class="contact-page__form">
-                        <form class="comment-one__form contact-form-validated" novalidate="novalidate">
+                        <form class="comment-one__form" action="{{ url('/contact-message') }}" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="comment-form__input-box">
-                                        <input type="text" placeholder="Your name" name="name">
+                                        <input type="text" placeholder="Your name" name="name" value="{{ old('name') }}" required>
+                                        @if ($errors->has('name'))
+                                            <span class="text-danger">{{ $errors->first('name') }}</span>
+                                        @endif
                                     </div>
                                 </div>
                                 <div class="col-xl-6">
                                     <div class="comment-form__input-box">
-                                        <input type="email" placeholder="Email address" name="email">
+                                        <input type="email" placeholder="Email address" name="email" value="{{ old('email') }}" required>
+                                        @if ($errors->has('email'))
+                                            <span class="text-danger">{{ $errors->first('email') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="comment-form__input-box">
+                                        <input type="text" placeholder="Enter Subject" name="subject" value="{{ old('subject') }}" required>
+                                        @if ($errors->has('subject'))
+                                            <span class="text-danger">{{ $errors->first('subject') }}</span>
+                                        @endif
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="comment-form__input-box text-message-box">
-                                        <textarea name="message" placeholder="Write a message"></textarea>
+                                        <textarea name="message" placeholder="Write a message" required>{{ old('message') }}</textarea>
+                                        @if ($errors->has('message'))
+                                            <span class="text-danger">{{ $errors->first('message') }}</span>
+                                        @endif
                                     </div>
                                     <div class="comment-form__btn-box">
                                         <button type="submit" class="thm-btn comment-form__btn"> <i class="fa fa-arrow-right"></i> Send a message</button>

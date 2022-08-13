@@ -30,6 +30,7 @@ Route::group(['namespace' => 'Frontend'], function() {
     Route::get('/trading','PageController@trading');
     Route::get('/tech','PageController@tech');
     Route::get('/working','PageController@working');
+    Route::post('/contact-message', 'PageController@contactMessage');
 });
 
 Route::get('/clear-cache', function() {

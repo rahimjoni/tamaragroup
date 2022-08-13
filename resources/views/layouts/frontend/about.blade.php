@@ -4,31 +4,6 @@
 
 @push('css')
     <style>
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(calc(-250px * 7));
-            }
-        }
-        .sliderTest {
-            height: 100px;
-            margin: auto;
-            overflow: hidden;
-            position: relative;
-            width: auto;
-        }
-        .sliderTest .slide-track {
-            animation: scroll 40s linear infinite;
-            display: flex;
-            width: calc(250px * 14);
-        }
-        .sliderTest .slide {
-            height: 100px;
-            width: 250px;
-            margin-top: 25px;
-        }
     </style>
 @endpush
 
@@ -110,76 +85,6 @@
         </div>
     </section><br><br>
 
-    <!--Brand One Start-->
-    <section class="brand-one">
-        <div class="brand-one__inner">
-            <div class="brand-one__shape-1">
-                <img class="img-fluid" src="{{ asset('assets/frontend/images/shapes/brand-one-shape-1.png') }}" alt="">
-            </div>
-            <div class="brand-one__shape-2 float-bob-y">
-                <img class="img-fluid" src="{{ asset('assets/frontend/images/shapes/brand-one-shape-2.png') }}" alt="">
-            </div>
-            <div class="container">
-                <div class="sliderTest">
-                    <div class="slide-track">
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/aramco1.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/Nobian1.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/rdw.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/lng1.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/ar.jpg') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/GE1.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/ye1.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="60" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/cbre.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/cargill.jpg') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/3M1.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/eaton.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/sabic1.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/staatsolie_logo_rgb.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/taqa-og-300.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/Philips_logo.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/lynkco.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                        <div class="slide">
-                            <img class="img-fluid" src="{{ asset('assets/frontend/images/partner/huntsman.png') }}" style="margin-left: 25px; margin-right: 25px" height="50" width="80" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><br>
-    <!--Brand One End-->
-
     <!--CTA One Start-->
     <section class="cta-one">
         <div class="cta-one__img-box">
@@ -190,11 +95,11 @@
         <div class="container">
             <div class="cta-one__inner">
                 <div class="cta-one__left">
-                    <p class="cta-one__sub-title">Need our services?</p>
-                    <h3 class="cta-one__title">WE OPTIMIZE YOUR PROCUREMENT PROCESS</h3>
+                    <p class="cta-one__sub-title">Need our help?</p>
+                    <h3 class="cta-one__title">WE HELP COMPANY SOLVING THEIR PROBLEM SMARTLY</h3>
                 </div>
                 <div class="cta-one__btn-box">
-                    <a href=""{{ url('contact-us') }} class="thm-btn cta-one__btn"> <i class="fa fa-arrow-right"></i> REQUEST ADVICE</a>
+                    <a href=""{{ url('contact-us') }} class="thm-btn cta-one__btn"> <i class="fa fa-arrow-right"></i> Reach Us</a>
                 </div>
             </div>
         </div>
